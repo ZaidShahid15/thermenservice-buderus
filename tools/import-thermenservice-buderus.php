@@ -66,12 +66,17 @@ function normalizeUrl(string $url, string $baseUrl): string
         return '';
     }
 
-    if (preg_match('~^//(?:wp-content|wp-includes)(?:/|$)~i', $url) === 1) {
-        return rtrim($baseUrl, '/') . substr($url, 1);
-    }
-
     if ($url === '//' || preg_match('~^//[?#]?$~', $url) === 1) {
         return rtrim($baseUrl, '/') . '/';
+    }
+
+    if (preg_match('~^//([^/?#]+)(.*)$~', $url, $matches) === 1) {
+        $candidateHost = $matches[1];
+        $candidateRest = $matches[2];
+
+        if (! str_contains($candidateHost, '.') && ! str_contains($candidateHost, ':')) {
+            return rtrim($baseUrl, '/') . '/' . ltrim($candidateHost . $candidateRest, '/');
+        }
     }
 
     if (str_starts_with($url, '//')) {
@@ -410,12 +415,70 @@ function rewriteHtml(
 
         if ($rewritePageLinks && isset($pageUrlMap[$normalized])) {
             $replacement = $pageUrlMap[$normalized] === '/' ? '/' : rtrim($pageUrlMap[$normalized], '/') . '/';
-
-            if ($normalized !== $pageUrl) {
-                $html = str_replace($url, $replacement, $html);
-            }
+            $html = str_replace($url, $replacement, $html);
         }
     }
+
+    $html = preg_replace_callback(
+        '~(?P<prefix>(?:src|href|poster)=["\'])(?P<url>//[^"\']+)(?P<suffix>["\'])~i',
+        static function (array $matches) use ($pageUrl, $pageUrlMap, $baseUrl, $publicDir, $userAgent, $rewritePageLinks, &$downloadedAssets, &$processedCss): string {
+            $original = $matches['url'];
+            $normalized = normalizeUrl($original, $baseUrl);
+
+            if ($normalized === '') {
+                return $matches[0];
+            }
+
+            $assetPath = downloadAsset($normalized, $baseUrl, $publicDir, $userAgent, $downloadedAssets, $processedCss);
+            if ($assetPath !== null) {
+                return $matches['prefix'] . "{{ asset('{$assetPath}') }}" . $matches['suffix'];
+            }
+
+            if ($rewritePageLinks && isset($pageUrlMap[$normalized])) {
+                $replacement = $pageUrlMap[$normalized] === '/' ? '/' : rtrim($pageUrlMap[$normalized], '/') . '/';
+                return $matches['prefix'] . $replacement . $matches['suffix'];
+            }
+
+            return $matches[0];
+        },
+        $html
+    ) ?? $html;
+
+    $html = preg_replace_callback(
+        '~(?P<prefix>srcset=["\'])(?P<value>[^"\']*//[^"\']+[^"\']*)(?P<suffix>["\'])~i',
+        static function (array $matches) use ($baseUrl, $publicDir, $userAgent, &$downloadedAssets, &$processedCss): string {
+            $parts = array_map('trim', explode(',', $matches['value']));
+
+            foreach ($parts as &$part) {
+                if ($part === '') {
+                    continue;
+                }
+
+                $segments = preg_split('~\s+~', $part, 2);
+                $candidate = $segments[0] ?? '';
+                $descriptor = $segments[1] ?? '';
+
+                if (! str_starts_with($candidate, '//')) {
+                    continue;
+                }
+
+                $normalized = normalizeUrl($candidate, $baseUrl);
+                if ($normalized === '') {
+                    continue;
+                }
+
+                $assetPath = downloadAsset($normalized, $baseUrl, $publicDir, $userAgent, $downloadedAssets, $processedCss);
+                if ($assetPath === null) {
+                    continue;
+                }
+
+                $part = "{{ asset('{$assetPath}') }}" . ($descriptor !== '' ? ' ' . $descriptor : '');
+            }
+
+            return $matches['prefix'] . implode(', ', $parts) . $matches['suffix'];
+        },
+        $html
+    ) ?? $html;
 
     if ($rewritePageLinks) {
         $html = str_replace(['href="//"', "href='//'"], ['href="/"', "href='/'"], $html);

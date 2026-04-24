@@ -412,8 +412,8 @@ class="hfeed site" id="page">
 		<div class="elementor-element elementor-element-51d73fd e-con-full e-flex e-con e-child" data-id="51d73fd" data-element_type="container">
 				<div class="elementor-element elementor-element-880e11c elementor-widget elementor-widget-image" data-id="880e11c" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-																<a href="//">
-							<img width="354" height="141" src="//wp-content/uploads/2023/12/Dein-Abschnittstext-11-e1765398688728.png" class="attachment-full size-full wp-image-394" alt="" srcset="//wp-content/uploads/2023/12/Dein-Abschnittstext-11-e1765398688728.png 354w, //wp-content/uploads/2023/12/Dein-Abschnittstext-11-e1765398688728-300x119.png 300w" sizes="(max-width: 354px) 100vw, 354px" />								</a>
+																<a href="/">
+							<img width="354" height="141" src="{{ asset('assets/images/thermenservice-buderus-at-dein-abschnittstext-11-e1765398688728-d396640d03.png') }}" class="attachment-full size-full wp-image-394" alt="" srcset="{{ asset('assets/images/thermenservice-buderus-at-dein-abschnittstext-11-e1765398688728-d396640d03.png') }} 354w, {{ asset('assets/images/thermenservice-buderus-at-dein-abschnittstext-11-e1765398688728-300x119-73806374ea.png') }} 300w" sizes="(max-width: 354px) 100vw, 354px" />								</a>
 															</div>
 				</div>
 				</div>
@@ -427,9 +427,9 @@ class="hfeed site" id="page">
 						<svg aria-hidden="true"  class="e-font-icon-svg e-fas-align-justify" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"></path></svg>					</div>
 				</div>
 				<nav class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow" data-toggle-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-fas-align-justify&quot; viewBox=&quot;0 0 448 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-close-icon="&lt;svg aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;e-font-icon-svg e-far-window-close&quot; viewBox=&quot;0 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;" data-full-width="yes">
-					<ul id="menu-1-f3fa2e9" class="hfe-nav-menu"><li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home parent hfe-creative-menu"><a href="//" class = "hfe-menu-item">Home</a></li>
-<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="//impressum/" class = "hfe-menu-item">Impressum</a></li>
-<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="//datenschutz/" class = "hfe-menu-item">Datenschutz</a></li>
+					<ul id="menu-1-f3fa2e9" class="hfe-nav-menu"><li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home parent hfe-creative-menu"><a href="/" class = "hfe-menu-item">Home</a></li>
+<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="/impressum/" class = "hfe-menu-item">Impressum</a></li>
+<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="/datenschutz/" class = "hfe-menu-item">Datenschutz</a></li>
 </ul> 
 				</nav>
 			</div>
@@ -447,9 +447,9 @@ class="hfeed site" id="page">
 					<div id="hfe-flyout-content-id-ec72265" class="hfe-side hfe-flyout-left hfe-flyout-open" data-layout="left" data-flyout-type="normal">
 						<div class="hfe-flyout-content push">
 							<nav >
-								<ul id="menu-1-ec72265" class="hfe-nav-menu"><li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home parent hfe-creative-menu"><a href="//" class = "hfe-menu-item">Home</a></li>
-<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="//impressum/" class = "hfe-menu-item">Impressum</a></li>
-<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="//datenschutz/" class = "hfe-menu-item">Datenschutz</a></li>
+								<ul id="menu-1-ec72265" class="hfe-nav-menu"><li id="menu-item-265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home parent hfe-creative-menu"><a href="/" class = "hfe-menu-item">Home</a></li>
+<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="/impressum/" class = "hfe-menu-item">Impressum</a></li>
+<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="/datenschutz/" class = "hfe-menu-item">Datenschutz</a></li>
 </ul>							</nav>
 							<div class="elementor-clickable hfe-flyout-close" tabindex="0">
 								<svg aria-hidden="true" tabindex="0" class="e-font-icon-svg e-far-window-close" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z"></path></svg>							</div>
@@ -463,7 +463,7 @@ class="hfeed site" id="page">
 		<div class="elementor-element elementor-element-3520845 e-con-full e-flex e-con e-child" data-id="3520845" data-element_type="container">
 				<div class="elementor-element elementor-element-daf6da0 elementor-widget elementor-widget-image" data-id="daf6da0" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="862" height="862" src="//wp-content/uploads/2025/09/Gutesiegel-Meister.webp" class="attachment-full size-full wp-image-282" alt="" srcset="//wp-content/uploads/2025/09/Gutesiegel-Meister.webp 862w, //wp-content/uploads/2025/09/Gutesiegel-Meister-300x300.webp 300w, //wp-content/uploads/2025/09/Gutesiegel-Meister-150x150.webp 150w, //wp-content/uploads/2025/09/Gutesiegel-Meister-768x768.webp 768w" sizes="(max-width: 862px) 100vw, 862px" />															</div>
+															<img width="862" height="862" src="{{ asset('assets/images/thermenservice-buderus-at-gutesiegel-meister-8f721f2824.webp') }}" class="attachment-full size-full wp-image-282" alt="" srcset="{{ asset('assets/images/thermenservice-buderus-at-gutesiegel-meister-8f721f2824.webp') }} 862w, {{ asset('assets/images/thermenservice-buderus-at-gutesiegel-meister-300x300-b12d24cd1f.webp') }} 300w, {{ asset('assets/images/thermenservice-buderus-at-gutesiegel-meister-150x150-424b4f7fc4.webp') }} 150w, {{ asset('assets/images/thermenservice-buderus-at-gutesiegel-meister-768x768-a99ce21d7c.webp') }} 768w" sizes="(max-width: 862px) 100vw, 862px" />															</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-9cf606e e-con-full elementor-hidden-mobile e-flex e-con e-child" data-id="9cf606e" data-element_type="container">
