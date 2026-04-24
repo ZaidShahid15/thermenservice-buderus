@@ -1,0 +1,16 @@
+/*!
+ * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('/assets/fonts/thermenservice-buderus-at-fa-solid-900-e5ae43c85a.eot');
+  src: url('/assets/fonts/thermenservice-buderus-at-fa-solid-900-5efccd16c0.eot') format("embedded-opentype"), url('/assets/fonts/thermenservice-buderus-at-fa-solid-900-1e5cd0c065.woff2') format("woff2"), url('/assets/fonts/thermenservice-buderus-at-fa-solid-900-63cf214475.woff') format("woff"), url('/assets/fonts/thermenservice-buderus-at-fa-solid-900-57639e0885.ttf') format("truetype"), url('/assets/images/thermenservice-buderus-at-fa-solid-900-f014a8e0fb.svg') format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
